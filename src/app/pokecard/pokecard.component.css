@@ -1,0 +1,35 @@
+.pokemon-card {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    /* border-radius: 10px; */
+    background-color: rgba(14, 13, 13, 0.2); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 0.5px solid #0a0a0a;
+  }
+  
+  .pokemon-card img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .pokemon-card h5 {
+    text-shadow: 1px 1px 2px #ffffff;
+    color: rgb(73, 72, 72);
+    margin-bottom: 30px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .butns{
+    border: 0.2px solid green;
+    color: green;
+    width: 140px;
+  }
+  .butns:hover{
+    border: 0.2px solid blue;
+    color: blue;
+  }

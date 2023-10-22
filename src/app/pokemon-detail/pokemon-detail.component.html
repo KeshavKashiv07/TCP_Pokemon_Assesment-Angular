@@ -1,0 +1,52 @@
+<div *ngIf="pokemonDetail">
+    <h2 class="m-4">Pokemon Details</h2>
+    <div class="pokePic">
+        <img src="{{pokemonDetail.sprites.other.dream_world.front_default}}" alt="pockemon">
+    </div>
+
+
+<div class="row ms-5">
+    <div class="details col-3 m-4">
+        <h5><label>ID : </label></h5>
+        <h3>{{ pokemonDetail.id }}</h3>
+    </div>
+
+    <div class="details col-3 m-4">
+        <h5><label>Name : </label></h5>
+        <h3>{{ pokemonDetail.name }}</h3>
+    </div>
+
+    <div class="details col-3 m-4">
+        <h5><label>Height : </label></h5>
+        <h3>{{ pokemonDetail.height }}</h3>
+    </div>
+
+    <div class="details col-3 m-4">
+        <h5><label>Weight : </label></h5>
+        <h3>{{ pokemonDetail.weight }}</h3>
+    </div>
+
+    <div class="details col-3 m-4">
+        <h5><label>Order : </label></h5>
+        <h3>{{ pokemonDetail.order }}</h3>
+    </div>
+
+    <div class="details col-3 m-4">
+        <h5><label>Is Default : </label></h5>
+        <h3>{{ pokemonDetail.is_default }}</h3>
+    </div>
+
+    <div class="details col-3 m-4">
+        <h5><label>Is Hidden : </label></h5>
+        <h3>{{ pokemonDetail.abilities[0].is_hidden}}</h3>
+    </div>
+</div>
+
+</div>
+
+<div class="saveBtn">
+     <button type="button" (click)="savePokemon()"> Save To DataBase</button>
+</div>
+    
+
+<router-outlet></router-outlet>

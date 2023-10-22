@@ -1,0 +1,17 @@
+<div class="logo">
+    <img src="../assets/logo.png" alt="pkemonLogo">
+</div>
+
+<div class="row cards">
+    <div class="col-3" *ngFor="let pokemon of displayedPokemonData">
+        <app-pokecard [imageUrl]="pokemon.imageUrl" [name]="pokemon.name" [id]="pokemon.id"></app-pokecard>
+    </div>
+</div>
+
+<div class="hint">
+    <h4> Click Here to Load Cards</h4>
+</div>
+
+<div class="center-button">
+     <button type="button" class="show-more-button" (click)="loadMoreCards()">Load More</button>
+</div>
